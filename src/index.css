@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .fluted-glass-hero {
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.04) 0px,
+        rgba(255, 255, 255, 0.01) 6px,
+        rgba(0, 0, 0, 0.38) 12px,
+        rgba(255, 85, 0, 0.12) 22px
+      ),
+      linear-gradient(95deg, #050505 0%, #240700 32%, #9a1f00 66%, #ff4500 100%);
+  }
+
+  .fluted-glass-overlay {
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.02) 3px,
+      rgba(0, 0, 0, 0.45) 6px,
+      rgba(255, 255, 255, 0.08) 9px
+    );
+    backdrop-filter: blur(5px) contrast(135%);
+    -webkit-backdrop-filter: blur(5px) contrast(135%);
+  }
+}
